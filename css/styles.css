@@ -5,9 +5,35 @@
   --accent-color: #ff6c00;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding-left: 0px;
+}
+
+button {
+  cursor: pointer;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
+
+.container {
+  width: 1200px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
 .link {
   text-decoration: none;
 }
@@ -51,6 +77,12 @@ body {
 header {
   background-color: gray;
 }
+
+.header-logo {
+  display: block;
+  padding: 32px 0px;
+}
+
 .header-link {
   font-weight: 600;
   font-size: 12px;
@@ -91,6 +123,11 @@ header {
 .hero {
   background-color: #737373;
 }
+
+.hero-right {
+  padding: 184px 526px 208px 100px;
+}
+
 .sub-title {
   color: rgba(157, 164, 189, 0.6);
 }
