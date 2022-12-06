@@ -46,31 +46,35 @@
           <a href="tel:+380441111111" class="header-tel link"
             >+38 044 111 11 11</a
           >
-          <button type="button" class="header-btn btn">Online-booking</button>
+          <button type="button" class="header-btn btn" data-modal-open>
+            Online-booking
+          </button>
         </div>
       </div>
     </header>
     <main>
       <section class="hero">
         <div class="container">
-          <ul class="hero-list list">
-            <li>
-              <a
-                href=""
-                rel="noopener noreferrer nofollow"
-                class="hero-links link"
-                >Instagram</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                rel="noopener noreferrer nofollow"
-                class="hero-links link"
-                >Youtube</a
-              >
-            </li>
-          </ul>
+          <div class="hero-soc">
+            <ul class="hero-list list">
+              <li>
+                <a
+                  href=""
+                  rel="noopener noreferrer nofollow"
+                  class="hero-links link"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  rel="noopener noreferrer nofollow"
+                  class="hero-links link"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
           <div class="hero-right">
             <p class="hero-pre-title pre-title">A hair salon for men in Kyiv</p>
             <h1 class="hero-title title">BarberShop</h1>
@@ -200,12 +204,20 @@
           <h2 class="barbers-title title">Our barbers</h2>
           <ul class="barbers-list list">
             <li class="barbers-items">
-              <img
-                src="./img/img_4.jpg"
-                alt="Barber John Smith"
-                width="370"
-                height="346"
-              />
+              <div class="barbers-thumb">
+                <img
+                  src="./img/img_4.jpg"
+                  alt="Barber John Smith"
+                  width="370"
+                  height="346"
+                />
+                <p class="barbers-cover-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                  commodi molestiae maiores, quod, libero non harum autem
+                  incidunt quis obcaecati eos sequi. Veritatis reprehenderit
+                  dicta corrupti aspernatur provident tempore ad.
+                </p>
+              </div>
               <h3 class="barbers-name">John Smith</h3>
               <p class="barbers-info">Extreme Barber</p>
               <ul class="barbers-soc-list list">
@@ -236,12 +248,20 @@
               </ul>
             </li>
             <li class="barbers-items">
-              <img
-                src="./img/img_5.jpg"
-                alt="Barber Michele Doe"
-                width="370"
-                height="346"
-              />
+              <div class="barbers-thumb">
+                <img
+                  src="./img/img_5.jpg"
+                  alt="Barber Michele Doe"
+                  width="370"
+                  height="346"
+                />
+                <p class="barbers-cover-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                  commodi molestiae maiores, quod, libero non harum autem
+                  incidunt quis obcaecati eos sequi. Veritatis reprehenderit
+                  dicta corrupti aspernatur provident tempore ad.
+                </p>
+              </div>
               <h3 class="barbers-name">Michele Doe</h3>
               <p class="barbers-info">Extreme Barber</p>
               <ul class="barbers-soc-list list">
@@ -272,12 +292,20 @@
               </ul>
             </li>
             <li class="barbers-items">
-              <img
-                src="./img/img_6.jpg"
-                alt="Barber Alan Black"
-                width="370"
-                height="346"
-              />
+              <div class="barbers-thumb">
+                <img
+                  src="./img/img_6.jpg"
+                  alt="Barber Alan Black"
+                  width="370"
+                  height="346"
+                />
+                <p class="barbers-cover-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                  commodi molestiae maiores, quod, libero non harum autem
+                  incidunt quis obcaecati eos sequi. Veritatis reprehenderit
+                  dicta corrupti aspernatur provident tempore ad.
+                </p>
+              </div>
               <h3 class="barbers-name">Alan Black</h3>
               <p class="barbers-info">Extreme Barber</p>
               <ul class="barbers-soc-list list">
@@ -415,5 +443,15 @@
         </ul>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg class="icon-close" width="18" height="18">
+            <use href="./img/sprite.svg#icon-close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
