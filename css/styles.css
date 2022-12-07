@@ -153,6 +153,7 @@ header .container {
 }
 .header-btn {
   margin-left: 40px;
+  margin-right: 20px;
   color: #ffffff;
   background-color: transparent;
   border: 1px solid var(--accent-color);
@@ -295,6 +296,10 @@ header .container {
 }
 .about-btn {
   color: #303030;
+}
+
+.about-btn:hover {
+  color: #ffffff;
 }
 
 /* -----------PRICES----------- */
@@ -632,6 +637,15 @@ header .container {
 }
 .contacts-title {
   color: var(--secondary-header-color);
+  margin-bottom: 40px;
+}
+
+.contacts-list {
+  margin-bottom: 70px;
+}
+
+.contacts-items:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .contacts-links {
@@ -641,6 +655,11 @@ header .container {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
+  transition: color 300ms linear;
+}
+
+.contacts-links:hover {
+  color: var(--accent-color);
 }
 
 .contacts-address {
@@ -662,12 +681,36 @@ header .container {
   padding: 56px 0;
 }
 
+.footer-container {
+  display: flex;
+}
+
 .footer-copy {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: #9da4bd;
+  margin-right: 773px;
+  min-width: 127px;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-list::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  margin-right: 40px;
+  background: #303030;
+}
+
+.footer-items:not(:last-child) {
+  margin-right: 40px;
 }
 
 .footer-links {
