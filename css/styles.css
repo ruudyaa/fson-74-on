@@ -743,6 +743,7 @@ header .container {
   top: 50%;
   left: 50%;
   width: 500px;
+  padding: 35px;
   min-height: 600px;
   background-color: #ffffff;
   border-radius: 5px;
@@ -780,3 +781,66 @@ header .container {
   visibility: hidden;
   pointer-events: none;
 }
+
+.modal-heading {
+  font-size: 24px;
+  font-weight: 700;
+  color: #191c26;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modal-input,
+.modal-select {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 10px;
+  color: #303030;
+  font-size: 14px;
+  padding: 10px 10px;
+}
+
+.modal-input::placeholder {
+  color: var(--accent-color);
+}
+
+.modal-input:required {
+  color: var(--accent-color);
+}
+
+.modal-input:not(:focus):not(:placeholder-shown):valid {
+  background-color: rgba(0, 255, 0, 0.2);
+}
+
+.modal-input:not(:focus):not(:placeholder-shown):invalid {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+.modal-input-group {
+  margin-bottom: 10px;
+}
+
+.modal-input-group label {
+  color: #191c26;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal-text {
+  width: 100%;
+  height: 140px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 10px;
+  color: #303030;
+  font-size: 14px;
+  resize: vertical;
+  max-height: 250px;
+  padding: 10px;
+}
+
+/* input[type="radio"]:checked + label {
+  background-color: var(--accent-color);
+} */
