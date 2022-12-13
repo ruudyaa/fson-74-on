@@ -110,7 +110,9 @@
               always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <button type="button" class="about-btn btn">ONLINE-BOOKING</button>
+            <button type="button" class="about-btn btn" data-modal-open>
+              ONLINE-BOOKING
+            </button>
           </div>
         </div>
       </section>
@@ -159,7 +161,9 @@
               </li>
             </ul>
           </div>
-          <button type="button" class="prices-btn btn">online-booking</button>
+          <button type="button" class="prices-btn btn" data-modal-open>
+            online-booking
+          </button>
         </div>
       </section>
 
@@ -463,7 +467,7 @@
         <p class="modal-heading">Contact us</p>
         <form action="">
           <div class="modal-input-group">
-            <label for="name">Введіть Ваше ім'я</label>
+            <label for="name">Enter your name</label>
             <input
               type="text"
               class="modal-input"
@@ -475,7 +479,7 @@
           </div>
 
           <div class="modal-input-group">
-            <label for="mail">Введіть Вашу пошту</label>
+            <label for="mail">Enter your email</label>
             <input
               type="email"
               class="modal-input"
@@ -487,7 +491,7 @@
           </div>
 
           <div class="modal-input-group">
-            <label for="number">Введіть Ваш номер телефону</label>
+            <label for="number">Enter your phone number</label>
             <input
               type="tel"
               class="modal-input"
@@ -499,8 +503,8 @@
             />
           </div>
 
-          <fieldset>
-            <legend>Категорія барбера</legend>
+          <fieldset class="modal-input-radio">
+            <legend>Barber's category</legend>
             <input
               type="radio"
               name="barber"
@@ -508,56 +512,54 @@
               value="barber"
               checked
             />
-            <label for="barber">Барбер</label>
+            <label for="barber">Barber</label>
             <input
               type="radio"
               name="barber"
               id="top-barber"
               value="top-barber"
             />
-            <label for="top-barber">TOP-Барбер</label>
+            <label for="top-barber">TOP-Barber</label>
             <input
               type="radio"
               name="barber"
               id="pro-barber"
               value="pro-barber"
             />
-            <label for="pro-barber">PRO-Барбер</label>
+            <label for="pro-barber">PRO-Barber</label>
           </fieldset>
 
-          <fieldset>
-            <legend>Послуги</legend>
-            <input type="checkbox" name="services" id="man-cut" />
-            <label for="man-cut">Чоловіча стрижка</label>
+          <fieldset class="modal-input-checkbox">
+            <legend>Services</legend>
+            <input type="checkbox" name="services" id="man-cut" checked />
+            <label for="man-cut">Men’s haircut</label>
             <input type="checkbox" name="services" id="beard-cut" />
-            <label for="beard-cut">Стрижка бороди</label>
+            <label for="beard-cut">Beard trim</label>
             <input type="checkbox" name="services" id="mustache-cut" />
-            <label for="mustache-cut">Стрижка вус</label>
+            <label for="mustache-cut">Mustache trim</label>
           </fieldset>
 
           <div class="modal-input-group">
-            <label for="city">Виберіть Ваше місто</label>
+            <label for="city">Choose your city</label>
             <select name="city" id="city" class="modal-select">
-              <option value="Kyiv">Київ</option>
-              <option value="Odesa">Одеса</option>
-              <option value="Lviv">Львів</option>
-              <option value="Iano-Frankivsk">Івано-Франківськ</option>
-              <option value="Dnipro">Дніпро</option>
+              <option value="Kyiv">Kyiv</option>
+              <option value="Odesa">Odesa</option>
+              <option value="Lviv">Lviv</option>
+              <option value="Ivano-Frankivsk">Ivano-Frankivsk</option>
+              <option value="Dnipro">Dnipro</option>
             </select>
           </div>
 
           <div class="modal-input-group">
-            <label for="comment">Введіть коментар</label>
+            <label for="comment">Write comment</label>
             <textarea
               name="comment"
               id="comment"
               class="modal-text"
-              placeholder="Ваш коментар"
-              cols="30"
-              rows="10"
+              placeholder="Your comment"
             ></textarea>
           </div>
-          <button type="submit">Відправити</button>
+          <button type="submit" class="modal-btn btn">Send</button>
         </form>
       </div>
     </div>

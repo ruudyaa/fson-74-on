@@ -783,7 +783,8 @@ header .container {
 }
 
 .modal-heading {
-  font-size: 24px;
+  font-size: 20px;
+  line-height: calc(23 / 20);
   font-weight: 700;
   color: #191c26;
   text-align: center;
@@ -796,18 +797,60 @@ header .container {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  padding-left: 10px;
   color: #303030;
   font-size: 14px;
   padding: 10px 10px;
+  margin-bottom: 10px;
 }
 
-.modal-input::placeholder {
+.modal-input:focus-within,
+.modal-text:focus-within,
+.modal-select:focus-within {
+  border: 1px solid var(--accent-color);
+  outline: none;
+}
+
+.modal-input:focus-within label,
+.modal-text:focus-within label,
+.modal-select:focus-within label {
   color: var(--accent-color);
 }
 
-.modal-input:required {
-  color: var(--accent-color);
+.modal-input-radio {
+  display: block;
+  border: none;
+  padding: 0;
+  margin-bottom: 15px;
+  color: #303030;
+  font-size: 14px;
+}
+
+.modal-input-checkbox {
+  display: block;
+  border: none;
+  padding: 0;
+  margin-bottom: 15px;
+  color: #303030;
+  font-size: 14px;
+}
+
+.modal-input-radio legend,
+.modal-input-checkbox legend {
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+}
+
+.modal-input-radio label,
+.modal-input-checkbox label {
+  margin-right: 10px;
+}
+
+.modal-input::placeholder,
+.modal-text::placeholder {
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
 }
 
 .modal-input:not(:focus):not(:placeholder-shown):valid {
@@ -823,6 +866,9 @@ header .container {
 }
 
 .modal-input-group label {
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
   color: #191c26;
   display: block;
   margin-bottom: 10px;
@@ -836,11 +882,21 @@ header .container {
   padding-left: 10px;
   color: #303030;
   font-size: 14px;
-  resize: vertical;
+  resize: none;
   max-height: 250px;
   padding: 10px;
+  margin-bottom: 15px;
 }
 
 /* input[type="radio"]:checked + label {
   background-color: var(--accent-color);
 } */
+
+.modal-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.modal-btn:hover {
+  color: var(--secondary-header-color);
+}
