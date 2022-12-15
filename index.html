@@ -402,6 +402,12 @@
         <div class="container">
           <section class="form">
             <h2 class="form-title title">Online-booking</h2>
+            <form action="" class="contact-form">
+              <input type="text" name="name" class="contact-form-input contact-form-item" placeholder="Name*">
+              <input type="tel" name="phone" class="contact-form-input contact-form-item" placeholder="Phone*">
+              <textarea name="message" class="contact-textarea contact-form-item" placeholder="Message"></textarea>
+              <button type="submit" class="contact-btn btn" data-modal-open>Send</button>
+            </form>
           </section>
           <section class="contacts">
             <h2 class="contacts-title title">Contacts</h2>
@@ -468,76 +474,55 @@
         <form action="">
           <div class="modal-input-group">
             <label for="name">Enter your name</label>
-            <input
-              type="text"
-              class="modal-input"
-              name="name"
-              placeholder="Іван Іванович"
-              id="name"
-              required
-            />
+            <div class="modal-input-wrapper">
+              <input
+                type="text"
+                class="modal-input"
+                name="name"
+                placeholder="Іван Іванович"
+                id="name"
+                required
+              />
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./img/sprite.svg#icon-person-black"></use>
+              </svg>
+            </div>
           </div>
 
           <div class="modal-input-group">
             <label for="mail">Enter your email</label>
-            <input
-              type="email"
-              class="modal-input"
-              name="email"
-              id="mail"
-              placeholder="test@gmail.com"
-              required
-            />
+            <div class="modal-input-wrapper">
+              <input
+                type="email"
+                class="modal-input"
+                name="email"
+                id="mail"
+                placeholder="test@gmail.com"
+                required
+              />
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./img/sprite.svg#icon-email"></use>
+              </svg>
+            </div>
           </div>
 
           <div class="modal-input-group">
             <label for="number">Enter your phone number</label>
-            <input
-              type="tel"
-              class="modal-input"
-              name="tel"
-              id="number"
-              placeholder="+38 093 111 22 33"
-              pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
-              required
-            />
+            <div class="modal-input-wrapper">
+              <input
+                type="tel"
+                class="modal-input"
+                name="tel"
+                id="number"
+                placeholder="+38 093 111 22 33"
+                pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+                required
+              />
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./img/sprite.svg#icon-phone-black"></use>
+              </svg>
+            </div>
           </div>
-
-          <fieldset class="modal-input-radio">
-            <legend>Barber's category</legend>
-            <input
-              type="radio"
-              name="barber"
-              id="barber"
-              value="barber"
-              checked
-            />
-            <label for="barber">Barber</label>
-            <input
-              type="radio"
-              name="barber"
-              id="top-barber"
-              value="top-barber"
-            />
-            <label for="top-barber">TOP-Barber</label>
-            <input
-              type="radio"
-              name="barber"
-              id="pro-barber"
-              value="pro-barber"
-            />
-            <label for="pro-barber">PRO-Barber</label>
-          </fieldset>
-
-          <fieldset class="modal-input-checkbox">
-            <legend>Services</legend>
-            <input type="checkbox" name="services" id="man-cut" checked />
-            <label for="man-cut">Men’s haircut</label>
-            <input type="checkbox" name="services" id="beard-cut" />
-            <label for="beard-cut">Beard trim</label>
-            <input type="checkbox" name="services" id="mustache-cut" />
-            <label for="mustache-cut">Mustache trim</label>
-          </fieldset>
 
           <div class="modal-input-group">
             <label for="city">Choose your city</label>
@@ -559,6 +544,18 @@
               placeholder="Your comment"
             ></textarea>
           </div>
+
+          <div class="modal-field-check">
+              <input
+                type="checkbox"
+                name="policy"
+                id="policy"
+                class="checkbox-input"
+              />
+              <label for="policy" class="label-checkbox"><span class="checkbox-policy">Приймаю <a href="" class="policy-link"> Умови договору</a></span></label>
+            </label>
+          </div>
+
           <button type="submit" class="modal-btn btn">Send</button>
         </form>
       </div>
