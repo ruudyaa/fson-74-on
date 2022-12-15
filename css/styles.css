@@ -612,8 +612,8 @@ header .container {
   background-color: #191c26;
   background-image: url(../img/contacts-bg.png);
   background-repeat: no-repeat;
-  background-size: calc(50% - 15px);
-  background-position: center right;
+  background-size: auto 100%;
+  background-position: center right calc(50% - 15px - 392px);
 }
 
 .contact-wrap > .container {
@@ -627,6 +627,62 @@ header .container {
 
 .form-title {
   color: var(--secondary-header-color);
+  margin-bottom: 44px;
+}
+
+.contact-btn {
+  color: #ffffff;
+}
+
+.contact-form-item {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  color: #ffffff;
+
+  margin-bottom: 44px;
+
+  cursor: pointer;
+
+  transition: border-bottom-color 300ms linear;
+}
+
+.contact-form-item::placeholder {
+  text-transform: uppercase;
+
+  color: rgba(157, 164, 189, 0.4);
+
+  transition: color 300ms linear;
+}
+
+.contact-form-item:focus,
+.contact-form-item:hover {
+  outline: transparent;
+  border-bottom-color: #ffffff;
+}
+
+.contact-form-item:focus::placeholder,
+.contact-form-item:hover::placeholder {
+  color: #ffffff;
+}
+
+.contact-form-input {
+  width: 270px;
+  height: 24px;
+}
+
+.contact-form-input:first-child {
+  margin-right: 30px;
+}
+
+.contact-textarea {
+  width: 570px;
+  height: 76px;
+  resize: none;
 }
 /* -----------CONTACTS----------- */
 .contacts {
@@ -791,6 +847,10 @@ header .container {
   margin-bottom: 20px;
 }
 
+.modal-input-wrapper {
+  position: relative;
+}
+
 .modal-input,
 .modal-select {
   width: 100%;
@@ -799,8 +859,9 @@ header .container {
   border-radius: 4px;
   color: #303030;
   font-size: 14px;
-  padding: 10px 10px;
-  margin-bottom: 10px;
+  padding: 10px 42px;
+
+  transition: border-color 300ms linear;
 }
 
 .modal-input:focus-within,
@@ -810,10 +871,27 @@ header .container {
   outline: none;
 }
 
+.modal-input:focus + svg {
+  fill: var(--accent-color);
+}
+
 .modal-input:focus-within label,
 .modal-text:focus-within label,
 .modal-select:focus-within label {
   color: var(--accent-color);
+}
+
+.modal-select {
+  padding: 10px 10px;
+}
+
+.modal-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+
+  transition: fill 300ms linear;
 }
 
 .modal-input-radio {
@@ -865,12 +943,13 @@ header .container {
   margin-bottom: 10px;
 }
 
-.modal-input-group label {
+.modal-input-group label,
+.modal-field-check label {
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
   color: #191c26;
-  display: block;
+  display: inline-block;
   margin-bottom: 10px;
 }
 
@@ -885,12 +964,62 @@ header .container {
   resize: none;
   max-height: 250px;
   padding: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+
+  transition: border-color 300ms linear;
 }
 
-/* input[type="radio"]:checked + label {
+.checkbox-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  display: inline;
+}
+
+.modal-field-check {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.modal-field-check label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label-checkbox::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 2px solid #303030;
+  border-radius: 2px;
+  display: block;
+  margin-right: 10px;
+  cursor: pointer;
+
+  transition: border-color 300ms linear, background-image 300ms linear,
+    background-color 300ms linear;
+}
+
+.checkbox-input:checked + label::before {
   background-color: var(--accent-color);
-} */
+  background-image: url(../img/icon-checked.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-position: center;
+  border-color: var(--accent-color);
+}
+
+.checkbox-policy {
+  line-height: calc(24 / 14);
+  color: var(--main-text-color);
+}
+
+.policy-link {
+  color: var(--accent-color);
+}
 
 .modal-btn {
   display: block;
