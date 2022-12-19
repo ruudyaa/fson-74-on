@@ -26,7 +26,7 @@
   transition: transform 300ms linear;
 }
 
-.close-btn {
+.modal__close-btn {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -41,9 +41,14 @@
   background-color: #ffffff;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
-.icon-close-black {
+.modal__icon-close {
   fill: currentColor;
 }
 
@@ -53,7 +58,7 @@
   pointer-events: none;
 }
 
-.modal-heading {
+.modal__heading {
   font-size: 20px;
   line-height: calc(23 / 20);
   font-weight: 700;
@@ -62,12 +67,12 @@
   margin-bottom: 20px;
 }
 
-.modal-input-wrapper {
+.modal__input-wrapper {
   position: relative;
 }
 
-.modal-input,
-.modal-select {
+.modal__input,
+.modal__select {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -79,28 +84,28 @@
   transition: border-color 300ms linear;
 }
 
-.modal-input:focus + svg {
+.modal__input:focus + svg {
   fill: var(--accent-color);
 }
 
-.modal-input:focus-within,
-.modal-text:focus-within,
-.modal-select:focus-within {
+.modal__input:focus-within,
+.modal__text:focus-within,
+.modal__select:focus-within {
   border: 1px solid var(--accent-color);
   outline: none;
 }
 
-.modal-input:focus-within label,
-.modal-text:focus-within label,
-.modal-select:focus-within label {
+.modal__input:focus-within label,
+.modal__text:focus-within label,
+.modal__select:focus-within label {
   color: var(--accent-color);
 }
 
-.modal-select {
+.modal__select {
   padding: 10px 10px;
 }
 
-.modal-icon {
+.modal__icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -109,7 +114,7 @@
   transition: fill 300ms linear;
 }
 
-.modal-input-radio {
+.modal__input-radio {
   display: block;
   border: none;
   padding: 0;
@@ -118,7 +123,7 @@
   font-size: 14px;
 }
 
-.modal-input-checkbox {
+.modal__checkbox-input {
   display: block;
   border: none;
   padding: 0;
@@ -127,39 +132,39 @@
   font-size: 14px;
 }
 
-.modal-input-radio legend,
-.modal-input-checkbox legend {
+.modal__input-radio legend,
+.modal__checkbox-input legend {
   margin-bottom: 10px;
   font-size: 12px;
   line-height: calc(14 / 12);
 }
 
-.modal-input-radio label,
-.modal-input-checkbox label {
+.modal__input-radio label,
+.modal__checkbox-input label {
   margin-right: 10px;
 }
 
-.modal-input::placeholder,
-.modal-text::placeholder {
+.modal__input::placeholder,
+.modal__text::placeholder {
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
 }
 
-.modal-input:not(:focus):not(:placeholder-shown):valid {
+.modal__input:not(:focus):not(:placeholder-shown):valid {
   background-color: rgba(0, 255, 0, 0.2);
 }
 
-.modal-input:not(:focus):not(:placeholder-shown):invalid {
+.modal__input:not(:focus):not(:placeholder-shown):invalid {
   background-color: rgba(255, 0, 0, 0.2);
 }
 
-.modal-input-group {
+.modal__input-group {
   margin-bottom: 10px;
 }
 
-.modal-input-group label,
-.modal-field-check label {
+.modal__input-group label,
+.modal__field-check label {
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
@@ -168,7 +173,7 @@
   margin-bottom: 10px;
 }
 
-.modal-text {
+.modal__text {
   width: 100%;
   height: 140px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -184,7 +189,7 @@
   transition: border-color 300ms linear;
 }
 
-.checkbox-input {
+.modal__checkbox-input {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -192,7 +197,7 @@
   display: inline;
 }
 
-.modal-field-check {
+.modal__field-check {
   margin-top: 0px;
   margin-bottom: 20px;
 
@@ -203,7 +208,7 @@
   }
 }
 
-.label-checkbox::before {
+.modal__label-checkbox::before {
   content: "";
   width: 16px;
   height: 16px;
@@ -217,7 +222,7 @@
     background-color 300ms linear;
 }
 
-.checkbox-input:checked + label::before {
+.modal__checkbox-input:checked + label::before {
   background-color: var(--accent-color);
   background-image: url(../img/icon-checked.svg);
   background-size: contain;
@@ -227,16 +232,16 @@
   border-color: var(--accent-color);
 }
 
-.checkbox-policy {
+.modal__checkbox-policy {
   line-height: calc(24 / 14);
   color: var(--main-text-color);
 }
 
-.policy-link {
+.modal__policy-link {
   color: var(--accent-color);
 }
 
-.modal-btn {
+.modal__btn {
   display: block;
   margin: 0 auto;
 

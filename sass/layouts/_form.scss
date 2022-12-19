@@ -3,17 +3,17 @@
   padding-top: 130px;
 }
 
-.form-title {
+.form__title {
   color: var(--secondary-header-color);
   margin-bottom: 44px;
 }
 
-.contact-btn {
+.contact__btn {
   display: block;
   color: #ffffff;
 }
 
-.contact-form-item {
+.contact-form__item {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
@@ -49,7 +49,7 @@
   }
 }
 
-.contact-form-input {
+.contact-form__input {
   width: 270px;
   height: 24px;
 
@@ -58,7 +58,7 @@
   }
 }
 
-.contact-textarea {
+.contact-form__textarea {
   width: 570px;
   height: 76px;
   resize: none;

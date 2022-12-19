@@ -36,11 +36,11 @@ header {
   }
 }
 
-.header-contact {
+.header__contact {
   margin-left: auto;
 }
 
-.header-tel {
+.header__tel {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -48,7 +48,7 @@ header {
   color: var(--primary-link-color);
 }
 
-.header-btn {
+.header__btn {
   margin-left: 40px;
   margin-right: 20px;
   color: #ffffff;

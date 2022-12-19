@@ -2,11 +2,11 @@
   padding: 56px 0;
 }
 
-.footer-container {
+.footer__container {
   display: flex;
 }
 
-.footer-copy {
+.footer__copy {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -16,7 +16,7 @@
   min-width: 127px;
 }
 
-.footer-list {
+.footer__list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,11 +30,11 @@
   }
 }
 
-.footer-items:not(:last-child) {
+.footer__items:not(:last-child) {
   margin-right: 40px;
 }
 
-.footer-links {
+.footer__links {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;

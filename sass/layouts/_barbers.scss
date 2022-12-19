@@ -3,11 +3,21 @@
   background-color: #f7f7f7;
 }
 
-.barbers-list {
+.barbers__pre-title {
+  margin-bottom: var(--main-margin);
+  color: #303030;
+}
+
+.barbers__title {
+  margin-bottom: 44px;
+  color: var(--primary-header-color);
+}
+
+.barbers__list {
   display: flex;
 }
 
-.barbers-items {
+.barbers__items {
   flex-basis: calc((100% - 60px) / 3);
   position: relative;
 
@@ -16,16 +26,16 @@
   }
 }
 
-.barbers-thumb {
+.barbers__thumb {
   position: relative;
   overflow: hidden;
 
-  &:hover .barbers-cover-text {
+  &:hover .barbers__cover-text {
     transform: translateY(0);
   }
 }
 
-.barbers-cover-text {
+.barbers__cover-text {
   position: absolute;
   top: 0;
   color: #ffffff;
@@ -40,17 +50,7 @@
   overflow: auto;
 }
 
-.barbers-pre-title {
-  margin-bottom: var(--main-margin);
-  color: #303030;
-}
-
-.barbers-title {
-  margin-bottom: 44px;
-  color: var(--primary-header-color);
-}
-
-.barbers-name {
+.barbers__name {
   margin-top: 30px;
   margin-bottom: 8px;
 
@@ -62,7 +62,7 @@
   color: #303030;
 }
 
-.barbers-info {
+.barbers__info {
   margin-bottom: 30px;
   font-size: 14px;
   line-height: 1.35;
@@ -71,13 +71,13 @@
   color: var(--accent-color);
 }
 
-.barbers-soc-list {
+.social {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.barbers-soc-items {
+.social__items {
   width: 44px;
   height: 44px;
 
@@ -86,7 +86,7 @@
   }
 }
 
-.barbers-soc-link {
+.social__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,6 +101,6 @@
   }
 }
 
-.barbers-soc-icons:hover {
+.social-icon:hover {
   fill: currentColor;
 }

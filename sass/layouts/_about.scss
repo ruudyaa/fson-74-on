@@ -6,26 +6,26 @@
   }
 }
 
-.list-about {
+.about__list {
   display: flex;
   margin-right: 30px;
 }
 
-.about-items:not(:last-child) {
+.about__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.about-pre-title {
+.about__pre-title {
   margin-bottom: var(--main-margin);
   color: #303030;
 }
 
-.about-title {
+.about__title {
   margin-bottom: var(--main-margin);
   color: var(--primary-header-color);
 }
 
-.about-after-title {
+.about__after-title {
   margin-bottom: var(--main-margin);
   font-size: 18px;
   line-height: 1.67;
@@ -33,7 +33,7 @@
   color: #555555;
 }
 
-.about-text {
+.about__text {
   margin-bottom: 42px;
   font-size: 14px;
   line-height: 1.86;
@@ -41,7 +41,7 @@
   color: #555555;
 }
 
-.about-btn {
+.about__btn {
   color: #303030;
 
   &:hover {
