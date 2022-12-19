@@ -1,0 +1,19 @@
+.pre-title {
+  display: flex;
+  align-items: center;
+  color: rgba(157, 164, 189, 0.6);
+  margin-bottom: var(--main-margin);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    width: 60px;
+    height: 1px;
+    display: block;
+    margin-right: 20px;
+    background-color: currentColor;
+  }
+}
