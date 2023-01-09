@@ -1,10 +1,22 @@
 .gallery {
-  padding: 120px 0;
+  padding: 84px 0;
+
+  @include tablet {
+    padding: 100px 0;
+  }
+
+  @include desktop {
+    padding: 120px 0;
+  }
 }
 
 .gallery__pre-title {
-  margin-bottom: 44px;
+  margin-bottom: 71px;
   color: #303030;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 44px;
+  }
 }
 
 .gallery__list {
@@ -15,7 +27,15 @@
 }
 
 .gallery__item {
-  flex-basis: calc((100% - 120px) / 4);
+  width: 100%;
   margin-left: 30px;
   margin-bottom: 30px;
+
+  @include tablet {
+    width: calc((100% - 60px) / 2);
+  }
+
+  @include desktop {
+    width: calc((100% - 120px) / 4);
+  }
 }
